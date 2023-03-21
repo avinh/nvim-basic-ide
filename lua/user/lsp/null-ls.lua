@@ -16,5 +16,7 @@ null_ls.setup {
       extra_filetypes = { "toml" },
       extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
     },
+    diagnostics.flake8,
+    null_ls.builtins.code_actions.gitsigns,
   },
 }
