@@ -192,3 +192,15 @@ You can install new plugins here: [plugins](https://github.com/LunarVim/nvim-bas
 > The computing scientist's main challenge is not to get confused by the complexities of his own making.
 
 \- Edsger W. Dijkstra
+
+## Control often used
+```
+gl: show error diagnostic in line
+gr: show references of function
+K: show info in hover
+ff: format code
+ctrl + (h, j, k, l): navigate window
+space + ff: find file
+space + ft: find text in all file
+space + fp: find project
+```
