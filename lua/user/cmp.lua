@@ -43,6 +43,9 @@ local kind_icons = {
   TypeParameter = "",
 }
 
+vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = "#6CC644" })
+
+
 cmp.setup {
   snippet = {
     expand = function(args)
@@ -96,6 +99,12 @@ cmp.setup {
     fields = { "kind", "abbr", "menu" },
     format = function(entry, vim_item)
       vim_item.kind = kind_icons[vim_item.kind]
+      
+      if entry.source.name == "copilot" then
+        vim_item.kind = icons.git.Octoface
+        vim_item.kind_hl_group = "CmpItemKindCopilot"
+      end
+      
       vim_item.menu = ({
         nvim_lsp = "",
         nvim_lua = "",
@@ -108,6 +117,37 @@ cmp.setup {
     end,
   },
   sources = {
+    {
+      name = "copilot",
+      -- keyword_length = 0,
+      max_item_count = 3,
+      trigger_characters = {
+        {
+          ".",
+          ":",
+          "(",
+          "'",
+          '"',
+          "[",
+          ",",
+          "#",
+          "*",
+          "@",
+          "|",
+          "=",
+          "-",
+          "{",
+          "/",
+          "\\",
+          "+",
+          "?",
+          " ",
+          -- "\t",
+          -- "\n",
+        },
+      },
+      group_index = 2,
+    },
     { name = "nvim_lsp" },
     { name = "nvim_lua" },
     { name = "luasnip" },

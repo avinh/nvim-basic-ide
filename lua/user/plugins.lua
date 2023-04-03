@@ -61,6 +61,7 @@ return packer.startup(function(use)
   use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
   use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
  
+  use { 'github/copilot.vim' , commit = "b6e5624351ba735e25eb8864d7d22819aad00606"}
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
   
   -- Colorschemes
