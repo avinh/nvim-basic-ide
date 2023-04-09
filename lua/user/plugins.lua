@@ -107,6 +107,8 @@ return packer.startup(function(use)
         requires = 'nvim-lua/plenary.nvim'
     }
 
+    use { 'github/copilot.vim' , commit = "b6e5624351ba735e25eb8864d7d22819aad00606"}
+
     -- Colorschemes
     use {
         "folke/tokyonight.nvim",
