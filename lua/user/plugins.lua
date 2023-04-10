@@ -109,6 +109,14 @@ return packer.startup(function(use)
 
     use { 'github/copilot.vim' , commit = "b6e5624351ba735e25eb8864d7d22819aad00606"}
 
+    -- flutter tools 
+    use {
+        'akinsho/flutter-tools.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim',
+            'stevearc/dressing.nvim', -- optional for vim.ui.select
+        },
+    }
     -- Colorschemes
     use {
         "folke/tokyonight.nvim",
