@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 require("tokyonight").setup({
-	style = "storm", 
+	style = "night", 
 	light_style = "day",
 	dim_inactive = false,
 	transparent = true,
