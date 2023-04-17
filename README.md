@@ -203,4 +203,15 @@ ctrl + (h, j, k, l): navigate window
 space + ff: find file
 space + ft: find text in all file
 space + fp: find project
+
+// tree
+rename: r
+delete: d
+copy: c
+move: x
+paste: p
+filter: f 
+
+//find and replace
+https://linuxize.com/post/vim-find-replace/
 ```
