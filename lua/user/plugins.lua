@@ -205,6 +205,14 @@ return packer.startup(function(use)
         commit = "f98c85e7c3d65a51f45863a34feb4849c82f240f"
     }
 
+    use({
+        "kdheepak/lazygit.nvim",
+        -- optional for floating window border decoration
+        requires = {
+            "nvim-lua/plenary.nvim",
+        },
+    })
+
     -- DAP
     use {
         "mfussenegger/nvim-dap",
