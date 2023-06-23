@@ -7,6 +7,8 @@ local servers = {
 	"bashls",
 	"jsonls",
 	"yamlls",
+	"golangci_lint_ls",
+	
 }
 
 local settings = {
