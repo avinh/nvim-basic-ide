@@ -193,6 +193,15 @@ You can install new plugins here: [plugins](https://github.com/LunarVim/nvim-bas
 
 \- Edsger W. Dijkstra
 
+#CUSTOM
+- Install 
+```
+sudo apt-get update
+sudo apt-get install flake8
+npm install -g prettier
+sudo apt-get install ripgrep
+```
+
 ## Control often used
 ```
 gl: show error diagnostic in line
