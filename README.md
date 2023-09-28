@@ -219,7 +219,10 @@ delete: d
 copy: c
 move: x
 paste: p
-filter: f 
+filter: f
+
+normal H toggles dotfiles
+normal I toggles gitignore
 
 //find and replace
 https://linuxize.com/post/vim-find-replace/
