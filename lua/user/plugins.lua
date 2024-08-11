@@ -70,8 +70,9 @@ return packer.startup(function(use)
         commit = "7282f7de8aedf861fe0162a559fc2b214383c51c"
     }
     use {
-        "akinsho/bufferline.nvim",
-        commit = "83bf4dc7bff642e145c8b4547aa596803a8b4dc4"
+        'akinsho/bufferline.nvim',
+        -- tag = "*",
+        requires = 'nvim-tree/nvim-web-devicons'
     }
     use {
         "moll/vim-bbye",
@@ -195,8 +196,11 @@ return packer.startup(function(use)
 
     -- Treesitter
     use {
-        "nvim-treesitter/nvim-treesitter",
-        commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac"
+        'nvim-treesitter/nvim-treesitter',
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,
     }
 
     -- Git
